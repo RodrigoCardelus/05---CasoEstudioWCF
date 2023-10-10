@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Servicio" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49294/Servicio.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49294/Servicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49294/Servicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicio_AgregarArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AgregarArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_EliminarArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_EliminarArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ModificarArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ModificarArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscarArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscarArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ListarArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ListarArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AgregarFactura_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarFactura" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AgregarFactura_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ListarFacturas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFacturas" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ListarFacturas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFacturasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_Logueo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logueo" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_Logueo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogueoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscoUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscoUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicio">
+    <wsdl:operation name="AgregarArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/AgregarArticulo" message="tns:IServicio_AgregarArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/AgregarArticuloResponse" message="tns:IServicio_AgregarArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/EliminarArticulo" message="tns:IServicio_EliminarArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/EliminarArticuloResponse" message="tns:IServicio_EliminarArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/ModificarArticulo" message="tns:IServicio_ModificarArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/ModificarArticuloResponse" message="tns:IServicio_ModificarArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/BuscarArticulo" message="tns:IServicio_BuscarArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/BuscarArticuloResponse" message="tns:IServicio_BuscarArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/ListarArticulo" message="tns:IServicio_ListarArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/ListarArticuloResponse" message="tns:IServicio_ListarArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarFactura">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/AgregarFactura" message="tns:IServicio_AgregarFactura_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/AgregarFacturaResponse" message="tns:IServicio_AgregarFactura_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarFacturas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/ListarFacturas" message="tns:IServicio_ListarFacturas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/ListarFacturasResponse" message="tns:IServicio_ListarFacturas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logueo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/Logueo" message="tns:IServicio_Logueo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/LogueoResponse" message="tns:IServicio_Logueo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscoUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/BuscoUsuario" message="tns:IServicio_BuscoUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/BuscoUsuarioResponse" message="tns:IServicio_BuscoUsuario_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicio" type="tns:IServicio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AgregarArticulo">
+      <soap:operation soapAction="http://tempuri.org/IServicio/AgregarArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarArticulo">
+      <soap:operation soapAction="http://tempuri.org/IServicio/EliminarArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarArticulo">
+      <soap:operation soapAction="http://tempuri.org/IServicio/ModificarArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarArticulo">
+      <soap:operation soapAction="http://tempuri.org/IServicio/BuscarArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarArticulo">
+      <soap:operation soapAction="http://tempuri.org/IServicio/ListarArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarFactura">
+      <soap:operation soapAction="http://tempuri.org/IServicio/AgregarFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarFacturas">
+      <soap:operation soapAction="http://tempuri.org/IServicio/ListarFacturas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logueo">
+      <soap:operation soapAction="http://tempuri.org/IServicio/Logueo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscoUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServicio/BuscoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Servicio">
+    <wsdl:port name="BasicHttpBinding_IServicio" binding="tns:BasicHttpBinding_IServicio">
+      <soap:address location="http://localhost:49294/Servicio.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

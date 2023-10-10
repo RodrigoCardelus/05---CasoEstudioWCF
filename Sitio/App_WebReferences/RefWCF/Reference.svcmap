@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ffcd1cf9-abef-46d7-8d4f-7dd511735016" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/miserviciowcf/servicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Servicio.wsdl" MetadataType="Wsdl" ID="8f7c8a6e-5065-4ed4-813c-5d16e4122fd7" SourceId="1" SourceUrl="http://laptop-81r362iv/MiServicioWCF/Servicio.svc?wsdl" />
+    <MetadataFile FileName="Servicio.disco" MetadataType="Disco" ID="e310a673-9b58-4c6e-81a6-2aff4aac1843" SourceId="1" SourceUrl="http://laptop-81r362iv/MiServicioWCF/Servicio.svc?disco" />
+    <MetadataFile FileName="Servicio.xsd" MetadataType="Schema" ID="19d22fbc-ddb0-44e9-8947-402a565ac689" SourceId="1" SourceUrl="http://laptop-81r362iv/MiServicioWCF/Servicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="Servicio2.xsd" MetadataType="Schema" ID="cc1d6f5a-cc95-4aef-b8fc-1e332e2b7b10" SourceId="1" SourceUrl="http://laptop-81r362iv/MiServicioWCF/Servicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="Servicio3.xsd" MetadataType="Schema" ID="8cc22bfc-7931-4845-b2c9-595136b7be2a" SourceId="1" SourceUrl="http://laptop-81r362iv/MiServicioWCF/Servicio.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
